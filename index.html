@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'/>
+<style>
+body {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: black;
+    color: black;
+    margin:0;
+    padding:0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+}
+</style>
+<!--
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
+-->
+<link rel="stylesheet" href="lib/jquery.splitter.css"/>
+<link rel="stylesheet" href="lib/aciTree.css"/>
+<link rel="stylesheet" href="lib/aciSortable.css"/>
+<link rel="stylesheet" href="workarea.css"/>
+<link rel="stylesheet" href="preview.css"/>
+<script src="lib/underscore.js"></script>
+<script src="lib/underscore-contrib.js"></script>
+<script src="lib/handlebars.js"></script>
+<script src="lib/jquery.js"></script>
+<script src="lib/jquery.splitter.js"></script>
+<script src="lib/jquery.aciPlugin.js"></script>
+<script src="lib/jquery.aciTree.dom.js"></script>
+<script src="lib/jquery.aciTree.core.js"></script>
+<script src="lib/jquery.aciTree.utils.js"></script>
+<script src="DICTIONARY.js"></script>
+<script src="helpers.js"></script>
+<script src="engine.js"></script>
+</head>
+<body>
+
+<div id="main">
+    <div class="workarea">
+        <div class="explorer aciTree"></div>
+        <div class="detail"></div>
+    </div>
+    <div class="preview-wrapper">
+        <div class="preview"></div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

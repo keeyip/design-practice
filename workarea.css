@@ -1,0 +1,9 @@
+.workarea .sidebar {
+}
+
+.workarea {
+    background:hsl(190,10%,80%);
+    color: hsl(180,30%,30%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
