@@ -17,7 +17,7 @@
 
 .preview {
     padding: 10px;
-    overflow:scroll;
+    overflow:auto;
 
     background-image:
         repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.01) 50px, rgba(0,0,0,.01) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.01) 63px, rgba(0,0,0,.01) 66px, transparent 66px, transparent 116px, rgba(0,0,0,0.01) 116px, rgba(0,0,0,0.01) 166px, rgba(0,0,0,0.01) 169px, rgba(0,0,0,0.01) 179px, rgba(0,0,0,0.01) 182px, rgba(0,0,0,0.01) 232px, transparent 232px),
@@ -207,16 +207,25 @@ body[data-romanization="cantonese"] .romanization.mandarin {
 .mobile-toggle {
 }
 
+body {
+	margin:0;
+}
 body[data-mode="preview"] .workarea,
 body[data-mode="preview"] .vsplitter
 {
     display:none;
 }
-body[data-mode="preview"] .preview-wrapper {
-    position:absolute;
+body[data-mode="preview"] #main {
+    position:relative !important;
     top:0;
     left:0;
     right:0;
-    bottom:0;
+    width: auto !important;
+}
+body[data-mode="preview"] .preview-wrapper {
+    position:relative;
+    top:0;
+    left:0;
+    right:0;
     width: auto !important;
 }
