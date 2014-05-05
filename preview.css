@@ -3,7 +3,7 @@
     background-color:hsl(180,50%,45%);
     color: hsl(180,35%,30%);
     font-family: verdana;
-    font-size: 20px;
+    font-size: 16px;
     box-shadow: inset 0 4px 4px hsla(0,0%,0%,0.4),
            inset 4px 0 4px hsla(0,0%,0%,0.1);
 
@@ -125,6 +125,27 @@
     border-radius: 40px 0;
     color: hsl(180,50%,50%);
 }
+@media (max-width: 800px) {
+    .language-toggle.toggle {
+        width: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        padding: 0 0 0 8px;
+        height: 20px;
+    }
+    .language-toggle.toggle li {
+        height:20px;
+        line-height:14px;
+    font-weight: normal !important;
+        width: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .language-toggle.toggle li.move-in {
+        -webkit-transform: translate3d(0,-20px,0);
+    }
+}
 .toggle.animating li {
     -webkit-transition: -webkit-transform 0.8s cubic-bezier(.17,.89,.32,1), opacity 0.3s ease-in;
 }
@@ -182,8 +203,8 @@
 .preview .column {
     display:inline-block;
     vertical-align:top;
-    margin: 8px 20px;
-    min-width: 400px;
+    margin: 8px 20px 8px 0px;
+    min-width: 300px;
 }
 .preview .english {
     margin: 0 10px;
@@ -208,7 +229,7 @@ body[data-romanization="cantonese"] .romanization.mandarin {
 }
 
 body {
-	margin:0;
+    margin:0;
 }
 body[data-mode="preview"] .workarea,
 body[data-mode="preview"] .vsplitter
